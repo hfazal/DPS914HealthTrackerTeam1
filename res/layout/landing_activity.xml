@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandingActivity" >
+
+    <Button
+        android:id="@+id/landing_b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/landing_create_user" />
+
+    <Button
+        android:id="@+id/landing_b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/landing_b2"
+        android:layout_alignLeft="@+id/landing_b2"
+        android:layout_alignRight="@+id/landing_b2"
+        android:text="@string/landing_select_user" />
+
+    <TextView
+        android:id="@+id/landing_tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/landing_sp1"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="@string/landing_text_intro" />
+
+    <Spinner
+        android:id="@+id/landing_sp1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/landing_b1"
+        android:layout_alignParentLeft="true"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/landing_iv1"
+        android:layout_width="fill_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/landing_logo_content_description" />
+
+</RelativeLayout>
