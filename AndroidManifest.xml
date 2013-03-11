@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name="cs.ecl.w13.finalproject.fazalgodhaniveis.NewUserActivity"></activity>
+        <activity android:name="cs.ecl.w13.finalproject.fazalgodhaniveis.MainMenuActivity"></activity>
         <provider android:name="HealthTrackerProvider" android:authorities="cs.ecl.w13.finalproject.fazalgodhaniveis.HealthTracker" android:exported="false" />
     </application>
 

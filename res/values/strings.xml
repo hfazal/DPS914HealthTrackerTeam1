@@ -14,5 +14,7 @@
     <string name="newuser_address">Your Address</string>
     <string name="newuser_phonenumbers">Your Phone Numbers</string>
     <string name="newuser_buttontext">Create New User Profile</string>
+    
+    <string name="mainmenu_intro">Below were gonna have 3 buttons (Tabs?): Edit User Profile, Health Measurements, Blood Pressure. For now, the toast that just appeared is the current user profile\'s ID (Passed from the first activity).</string>
 
 </resources>

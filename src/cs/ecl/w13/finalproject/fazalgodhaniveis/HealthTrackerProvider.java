@@ -45,7 +45,7 @@ public class HealthTrackerProvider extends ContentProvider {
 		private static final int DATABASE_VERSION = 1;
 		private static final String DATABASE_CREATE_USERPROFILE = "create table "
 				+ USERPROFILE_TABLE + " ("
-				+ USERPROFILE_ID + " INTEGER PRIMARY KEY, "
+				+ USERPROFILE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
 				+ USERPROFILE_NAME + " text not null, "
 				+ USERPROFILE_ADDRESS + " text not null);";
 		private static final String DATABASE_CREATE_PHONENUMBERS = "create table "
@@ -76,13 +76,13 @@ public class HealthTrackerProvider extends ContentProvider {
 	@Override
 	public int delete(Uri arg0, String arg1, String[] arg2) {
 		//Right now this function just deletes ALL rows in specificed table
-		switch (uriMatcher.match(arg0)) {
+		/*switch (uriMatcher.match(arg0)) {
 			case USERPROFILE:
 				healthtrackerDB.delete(USERPROFILE_TABLE, "1=1", null);
 				break;
 			default:
 				throw new IllegalArgumentException("Unsupported URI: " + arg0);
-		}
+		}*/
 		
 		return 1;
 	}
